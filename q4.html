@@ -1,0 +1,171 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>lab 6 q4</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      line-height: 1.6;
+      background: #fff;
+      color: #000;
+    }
+      .toolbar {
+      background-color: #111;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .toolbar button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .toolbar button:hover {
+      background-color: #555;
+    }
+
+
+    header {
+      background-color: #e5c873;
+      padding: 40px 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    header h1 {
+      font-weight: 900;
+      margin: 0 0 15px 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 400;
+      color: #6b5e29;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .articles {
+      overflow: hidden;
+      margin-top: 30px;
+      box-sizing: border-box;
+    }
+
+    .article {
+      float: left;
+      width: 30%;
+      min-width: 280px;
+      margin-right: 3.3333%;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+    }
+
+    .article:last-child {
+      margin-right: 0;
+    }
+
+    .article h3 {
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .article p {
+      font-weight: 300;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 2px solid #000;
+      cursor: pointer;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    .read-more:hover {
+      color: #555;
+      border-color: #555;
+    }
+
+    @media (max-width: 900px) {
+      .article {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="toolbar">
+    <div>Flexbox Article Layout<br>
+    
+    <small>A PEN BY Jon Daiello</small>
+    </div>
+    <div>
+      <button>Fork</button>
+      <button>Change View</button>
+      <button>Log In</button>
+      <button>Sign Up</button>
+    </div>
+  </div>
+
+
+  <header>
+    <h1>RESPONSIVE FLEXBOX ARTICLE LISTING</h1>
+    <p>
+      Flexbox is an amazingly powerful layout tool. In this example I have created a responsive grid of articles that increased the amount of visible articles on the page at larger resolutions.
+    </p>
+  </header>
+
+  <section class="articles">
+    <article class="article">
+      <h3>Article Title Here</h3>
+      <p>
+        Hydrogen stratosphere control tower capacitor Saturn Lalande 21185. Control tower x-rays Luhman 16 Banard's Star engine lunar. Horizon engine capture Pluto Brahe sun continuum ion-drive control tower Proxima Centauri space-time booster. Core horizon subspace Voyager coordinates water. Contractors Banards Star nozzle time Orion weightless Gemini extra-vehicular explore.
+      </p>
+      <a href="#" class="read-more">READ MORE</a>
+    </article>
+
+    <article class="article">
+      <h3>Article Title Here</h3>
+      <p>
+        Mars NASA subspace crew warp Herschel stratosphere. Saturn sky zero-g stratosphere fuel cell Venus grounded crew yaw Ptolemy Challenger. Pioneer stratosphere Cassini Lalande 21185 Earth telemetry. Galileo uranium jumpsuit warp Hawking.
+      </p>
+      <a href="#" class="read-more">READ MORE</a>
+    </article>
+
+    <article class="article">
+      <h3>Article Title Here</h3>
+      <p>
+        Challenger Voyager Sirius capsule Pioneer Kepler hyperspace launch. Singularity extra-vehicular circumnavigate burst. Procyon fuel cell asteroid subspace uranium Proxima Centauri prototype capsule.
+      </p>
+      <a href="#" class="read-more">READ MORE</a>
+    </article>
+  </section>
+
+</body>
+</html>
