@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        header, footer {
+            background-color: #93e0d4;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .gallery-section {
+            background-color: #f7a7a7;
+            padding: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        .gallery {
+            display: grid;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .img-box {
+            background-color: white;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>Header</header>
+
+    <div class="gallery-section">
+        <h2>Gallery</h2>
+
+        <div class="gallery">
+            <div class="img-box">Image</div>
+            <div class="img-box">Image</div>
+            <div class="img-box">Image</div>
+            <div class="img-box">Image</div>
+
+            <div class="img-box">Image</div>
+            <div class="img-box">Image</div>
+            <div class="img-box">Image</div>
+            <div class="img-box">Image</div>
+        </div>
+    </div>
+
+    <footer>Footer</footer>
+
+</body>
+</html>

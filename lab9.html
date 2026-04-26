@@ -1,0 +1,75 @@
+1.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Web Page Layout</title>
+<style>
+body{
+font-family:arial,sans-serif;
+margin:0;
+}
+header,footer{
+background:#007bdb;
+color:white;
+text-align:center;
+padding:15px;
+}
+nav{
+text-align:center;
+background:#eee;
+padding:10px;
+}
+nav button{
+background:#007bdb;
+color:white;
+border:none;
+padding:8px 15px
+margin:3px;
+cursor:pointer;
+}
+.container{
+display:flex;
+padding:20px;
+}
+.sidebar{
+width:200px;
+background:#f4f4f4
+padding:15px;
+}
+.content{
+flex:1;
+padding:15px;
+}
+footer{
+font-size:15px
+}
+</style>
+</head>
+<body>
+<header>
+<h2>My Web Page Layout</h2>
+</header>
+<nav>
+<button>Home</button>
+<button>About</button>
+<button>Service</button>
+<button>Contact</button>
+</nav>
+<div class="container">
+<div class="sidebaar">
+<h3>Sidebaar Menu</h3>
+<button>Option 1</button><br><br>
+<button>Option 2</button><br><br>
+<button>Option 3</button>
+</div>
+<div class="content">
+<h2>Welcome!</h2>
+<p>This is a simple page layout using divs,buttons,containers.</p>
+<p>You can modify colors,spacing,and text as you wish.</p>
+</div>
+</div>
+<footer>
+@2025 My website || All Rights Reserved.
+</footer>
+</body>
+</html>
